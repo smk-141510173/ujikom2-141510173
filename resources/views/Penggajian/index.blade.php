@@ -16,7 +16,7 @@
                     @else
                     
                     <div class="intro-text">
-                        <b><h1><span class="name">PENGGAJIAN</span></h1></b>
+                        <h1><b><font face="Maiandro GD" color="white"><center>PENGGAJIAN</center></font></b></h1>
                         <hr class="star-light">
                         
                     </div>
@@ -28,7 +28,7 @@
 <br>
 	 <div class="right_col" role="main">
           <div class="">
-<center><h2>Data Penggajian</h2></center>
+<h1><b><font face="Maiandro GD" color="white"><center>Data Penggajian</center></font></b></h1>
             <div class="clearfix"></div>
  &nbsp;&nbsp;&nbsp;<a href="{{url('Penggajians/create')}}" class="btn btn-primary">Input Data Penggajian&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
             <div class="row">
@@ -60,7 +60,7 @@
                          @foreach ($penggajian as $data)
                              <tr>
                                  <th><center>{{ $no++ }}</center></th>
-                                 <th><center>{{ $data->Tunjangan_pegawai->Kode_tunjangan_id }}</center></th>
+                                 <th><center>{{ $data->Tunjangan_pegawai->tunjangan_pegawai_id }}</center></th>
                                  <th><center>{{ $data->Jumlah_jam }}</center></th>
                                  <th><center>{{ $data->Jumlah_lembur }}</center></th>
                                  <th><center>{{ $data->Gaji_pokok }}</center></th>

@@ -16,7 +16,7 @@
                     @else
                     
                     <div class="intro-text">
-                        <b><h1><span class="name">Lembur Pegawai</span></h1></b>
+                        <h1><b><font face="Maiandro GD" color="white"><center>LEMBUR PEGAWAI</center></font></b></h1>
                         <hr class="star-light">
                         
                     </div>
@@ -28,7 +28,7 @@
 <br>
 	 <div class="right_col" role="main">
           <div class="">
-<center><h2>Data Lembur Pegawai</h2></center>
+<h1><b><font face="Maiandro GD" color="white"><center>Data Lembur Pegawai</center></font></b></h1>
             <div class="clearfix"></div>
  &nbsp;&nbsp;&nbsp;<a href="{{url('Lembur/create')}}" class="btn btn-primary">Input Lembur Pegawai&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
             <div class="row">

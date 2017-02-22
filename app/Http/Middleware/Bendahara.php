@@ -21,6 +21,6 @@ class Bendahara
        elseif (auth()->check() && $request->user()->permission == 'Bendahara') {
            return $next ($request);
        }
-       return redirect()->guest('/');
+       return redirect()->guest('/login');
     }
 }

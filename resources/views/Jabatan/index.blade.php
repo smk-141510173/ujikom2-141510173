@@ -16,7 +16,7 @@
                     @else
                     
                     <div class="intro-text">
-                        <b><h1><span class="name">JABATAN</span></h1></b>
+                        <h1><b><font face="Maiandro GD" color="white"><center>JABATAN</center></font></b></h1>
                         <hr class="star-light">
                         
                     </div>
@@ -28,7 +28,7 @@
 <br>
 	 <div class="right_col" role="main">
           <div class="">
-<center><h2>Data Jabatan</h2></center>
+<h1><b><font face="Maiandro GD" color="white"><center>Data Jabatan</center></font></b></h1>
             <div class="clearfix"></div>
  &nbsp;&nbsp;&nbsp;<a href="{{url('Jabatan/create')}}" class="btn btn-primary">Input Data Jabatan&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
             <div class="row">

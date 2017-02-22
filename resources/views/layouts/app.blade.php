@@ -21,6 +21,10 @@
     </script>
 </head>
 <body>
+<style> 
+html,body{
+background-image:url(kay.png);
+}</style>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">

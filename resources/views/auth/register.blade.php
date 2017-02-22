@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 <div class="container">
@@ -45,6 +45,8 @@
                                <select class="form-control" name="permission">
                                     <option value="Admin">Admin</option>
                                     <option value="Pegawai">Pegawai</option>
+                                    <option value="HRD">HRD</option>
+                                    <option value="Bendahara">Bendahara</option>
                                 </select>
                             </div>
                         </div>

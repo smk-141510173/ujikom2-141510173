@@ -20,19 +20,18 @@
                   {!! Form::open(['url' => 'Penggajians', 'class' => 'form-horizontal form-label-left']) !!}
     <div id="pegawai">
       <div class="form-group">
-          <div class="control-label col-md-3 col-sm-3 col-xs-12">
-              {!! Form::label('Tunjangan Pegawai', 'Tunjangan Pegawai ') !!}
-               <span class="required">*</span>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <select class="form-control col-md-7 col-xs-12" name="Tunjangan_pegawai_id">
+        <div class="control-label col-md-3 col-sm-3 col-xs-12">
+            {!! Form::label('Tunjangan pegawai', 'Tunjangan pegawai ') !!}
+             <span class="required">*</span>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <select class="form-control col-md-7 col-xs-12" name="Kode_tunjangan_id">
             @foreach($tunjangan as $data)
                 <option value="{{$data->id}}">{{$data->Kode_tunjangan_id}}</option>
             @endforeach
             </select>
         </div>
     </div>
-      </div>
      <div class="form-group">
         <div class="control-label col-md-3 col-sm-3 col-xs-12">
             {!! Form::label('Jumlah Jam', 'Jumlah Jam ') !!}

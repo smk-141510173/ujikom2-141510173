@@ -16,7 +16,7 @@
                     @else
                     
                     <div class="intro-text">
-                        <h1><b><span class="name">GOLONGAN</span></b></h1>
+                        <h1><b><font face="Maiandro GD" color="white"><center>GOLONGAN</center></font></b></h1>
                         <hr class="star-light">
                     </div>
                     @endif
@@ -27,7 +27,7 @@
 <br>
 	 <div class="right_col" role="main">
           <div class="">
-<center><h2>Data Golongan</h2></center>
+<h1><b><font face="Maiandro GD" color="white"><center>Data Golongan</center></font></b></h1>
             <div class="clearfix"></div>
  &nbsp;&nbsp;&nbsp;<a href="{{url('Golongan/create')}}" class="btn btn-primary">Input Data Golongan&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
             <div class="row">

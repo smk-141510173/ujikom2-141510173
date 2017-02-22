@@ -72,14 +72,6 @@
                         </div>                        
                         <hr>
                         
-
-
-
-
-
-
-
-
                         <div class="form-group{{ $errors->has('Nip') ? ' has-error' : '' }}">
                             <label for="Nip" class="col-md-4 control-label">NIP</label>
                             <div class="col-md-6">

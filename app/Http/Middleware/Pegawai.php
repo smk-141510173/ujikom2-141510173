@@ -27,6 +27,6 @@ class Pegawai
        elseif (auth()->check() && $request->user()->permission == 'Pegawai') {
            return $next ($request);
        }
-       return redirect()->guest('/');
+       return redirect()->guest('/login');
     }
 }

@@ -16,7 +16,7 @@
                     @else
                     
                     <div class="intro-text">
-                        <b><h1><span class="name">TUNJANGAN</span></h1></b>
+                        <h1><b><font face="Maiandro GD" color="white"><center>TUNJANGAN</center></font></b></h1>
                         <hr class="star-light">
                         
                     </div>
@@ -28,7 +28,7 @@
 <br>
 	 <div class="right_col" role="main">
           <div class="">
-<center><h2>Data Tunjangan</h2></center>
+<h1><b><font face="Maiandro GD" color="white"><center>Data Tunjangan</center></font></b></h1>
             <div class="clearfix"></div>
  &nbsp;&nbsp;&nbsp;<a href="{{url('Tunjangan/create')}}" class="btn btn-primary">Input Data Tunjangan&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
             <div class="row">
