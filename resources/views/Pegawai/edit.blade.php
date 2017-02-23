@@ -61,6 +61,7 @@
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12">
               {!! Form::file('Photo',null,['class'=>'form-control col-md-7 col-xs-12']) !!}
+              
               <h4 class="text-danger"><?php echo '<br><br>'.$errors->first('Nip', '<p>Form input harus diisi!!</p>') ?></h4>
           </div>
       </div>

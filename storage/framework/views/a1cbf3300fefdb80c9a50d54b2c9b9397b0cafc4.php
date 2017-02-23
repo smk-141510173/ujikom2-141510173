@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-8 col-md-offset-2">
                 <?php if(Auth::guest()): ?>
                     <img class="img-responsive" alt="" src="<?php echo e(url('penggajian/img/lock.png')); ?>">
                     <div class="intro-text">
@@ -28,18 +28,12 @@
           <div class="">
 <h1><b><font face="Maiandro GD" color="white"><center>Data Kategori Lembur</center></font></b></h1>
             <div class="clearfix"></div>
- &nbsp;&nbsp;&nbsp;<a href="<?php echo e(url('Kategori/create')); ?>" class="btn btn-primary">Input Kategori Lembur&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
+ <center><a href="<?php echo e(url('Kategori/create')); ?>" class="btn btn-primary">Input Kategori Lembur<i class="fa fa-pencil"></i></a></center>
+           <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
                   <div class="x_title">
-                    
-                    <ul class="nav navbar-right panel_toolbox">
-                     
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                 
+                 <hr>
                   <div class="x_content">
 
                     <table id="datatable" class="table table-striped table-bordered">

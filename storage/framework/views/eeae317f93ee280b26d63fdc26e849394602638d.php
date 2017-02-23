@@ -3,7 +3,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-8 col-md-offset-2">
                 <?php if(Auth::guest()): ?>
                     <img class="img-responsive" alt="" src="<?php echo e(url('penggajian/img/lock.png')); ?>">
                     <div class="intro-text">
@@ -28,17 +28,12 @@
           <div class="">
 <h1><b><font face="Maiandro GD" color="white"><center>Data Tunjangan Pegawai</center></font></b></h1>
             <div class="clearfix"></div>
- &nbsp;&nbsp;&nbsp;<a href="<?php echo e(url('TunjanganP/create')); ?>" class="btn btn-primary">Input Tunjangan Pegawai&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
+ <center><a href="<?php echo e(url('TunjanganP/create')); ?>" class="btn btn-primary">Input Tunjangan Pegawai<i class="fa fa-pencil"></i></a></center>
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
                   <div class="x_title">
-                    
-                    <ul class="nav navbar-right panel_toolbox">
-                     
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
+                 <hr>
                  
                   <div class="x_content">
 
@@ -47,8 +42,10 @@
                         <tr class="danger">
                           <th><p class="center"><center>No.</center></p></th>
                           <th><p class="center"><center>Kode Tunjangan</center></p></th>
-                          <th><p class="center"><center>Nip</center></p></p></th>
-                          <th><p class="center"><center>Pegawai</center></p></p></th>
+                          <th><p class="center"><center>Nama Pegawai</center></p></p></th>
+                          <th><p class="center"><center>Jabatan</center></p></p></th>
+                          <th><p class="center"><center>Golongan</center></p></p></th>
+                          <th><p class="center"><center>Jumlah anak</center></p></p></th>
                           <th><p class="center"><center>Besaran Uang</center></p></p></th>
                           <th colspan="3"><p class="center"><center>Tindakan</center></p></th>
                         </tr>
@@ -59,11 +56,33 @@
                          <?php $no=1; ?>
                          <?php $__currentLoopData = $tp; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $data): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                              <tr>
-                                 <th><center><?php echo e($no++); ?></center></th>
-                                 <th><center><?php echo e($data->Tunjangans->Kode_tunjangan); ?></center></th>
-                                 <th><center><?php echo e($data->Pegawai->Nip); ?></center></th>
-                                 <th><center><?php echo e($data->Pegawai->User->name); ?></center></th>
-                                 <th><center><?php echo 'Rp.'. number_format($data->Tunjangans->Besaran_uang, 2,",","."); ?></center></th>
+                                 <td><center><?php echo e($no++); ?></center></td>
+                                 <td><center><?php echo e($data->Tunjangans->Kode_tunjangan); ?></center></td>
+                                 <td><center><?php echo e($data->Pegawai->User->name); ?></center></td>
+                                 <td><center><?php echo e($data->Pegawai->Jabatan->Nama_jabatan); ?></center></td>
+                                 <td><center><?php echo e($data->Pegawai->Golongan->Nama_golongan); ?></center></td>
+                                 <td><center><?php echo e($data->Tunjangans->Jumlah_anak); ?></center></td>
+
+                                 <td><center>
+                                 <?php
+                                 if($data->Tunjangans->Jumlah_anak<='1')
+                                 {
+                                  echo 'Rp'.number_format($data ->Tunjangans->Besaran_uang,2,",",".");
+                                 }
+                                 elseif ($data->Tunjangans->Jumlah_anak=='1' || $data->Tunjangans->Jumlah_anak == '2') 
+                                 {
+                                   echo 'Rp'.number_format($data->Tunjangans->Besaran_uang * $data->Tunjangans->Jumlah_anak,2,",",".");
+                                 }
+                                 elseif ($data->Tunjangans->Jumlah_anak >='2') 
+                                 {
+                                   echo 'Rp'.number_format($data->Tunjangans->Besaran_uang * $data->Tunjangans->Jumlah_anak,2,",",".");
+                                 }
+
+                                 ?>
+
+                                </center></td>
+
+                                 
                                  <th><a href="<?php echo e(url('TunjanganP',$data->id)); ?>" class="btn btn-primary"><i class="fa fa-eye">Lihat</i></a></th>
                                  <th><a title="Edit" href="<?php echo e(route('TunjanganP.edit',$data->id)); ?>" class="btn btn-warning"><i class="fa fa-edit">Edit</i></a></th>
                                  <th>

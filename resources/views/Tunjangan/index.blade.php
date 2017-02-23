@@ -5,7 +5,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-10 col-md-offset-1">
                 @if (Auth::guest())
                     <img class="img-responsive" alt="" src="{{url('penggajian/img/lock.png')}}">
                     <div class="intro-text">
@@ -30,17 +30,13 @@
           <div class="">
 <h1><b><font face="Maiandro GD" color="white"><center>Data Tunjangan</center></font></b></h1>
             <div class="clearfix"></div>
- &nbsp;&nbsp;&nbsp;<a href="{{url('Tunjangan/create')}}" class="btn btn-primary">Input Data Tunjangan&nbsp;&nbsp;&nbsp;<i class="fa fa-pencil"></i></a>
+ <center><a href="{{url('Tunjangan/create')}}" class="btn btn-primary">Input Data Tunjangan<i class="fa fa-pencil"></i></a></center>
             <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
                   <div class="x_title">
-                    
-                    <ul class="nav navbar-right panel_toolbox">
-                     
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
+                 <hr>
+                 
                  
                   <div class="x_content">
 
